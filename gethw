@@ -1,0 +1,12 @@
+#!/bin/bash
+
+mkdir -p ./tmp
+
+NHW=$1
+curl https://cs61a.org/hw/hw$NHW/hw$NHW.zip -o ./tmp/hw$NHW.zip
+unzip ./tmp/hw$NHW.zip -d ./hw
+
+rm -rf ./tmp
+
+# macos only
+open "https://cs61a.org/hw/hw$NHW/"

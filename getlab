@@ -1,0 +1,12 @@
+#!/bin/bash
+
+mkdir -p ./tmp
+
+NLAB=$1
+curl https://cs61a.org/lab/lab$NLAB/lab$NLAB.zip -o ./tmp/lab$NLAB.zip
+unzip ./tmp/lab$NLAB.zip -d ./labs
+
+rm -rf ./tmp
+
+# macos only
+open "https://cs61a.org/lab/lab$NLAB/"
