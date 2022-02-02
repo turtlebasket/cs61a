@@ -1,0 +1,12 @@
+#!/bin/bash
+
+mkdir -p ./tmp
+
+PROJ=$1
+curl https://cs61a.org/proj/$PROJ/$PROJ.zip -o ./tmp/$PROJ.zip
+unzip ./tmp/$PROJ.zip -d ./projects
+
+rm -rf ./tmp
+
+# macos only
+open "https://cs61a.org/proj/$PROJ/"
