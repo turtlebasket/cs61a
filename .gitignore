@@ -3,3 +3,8 @@ hw/*
 
 labs/*
 !labs/.gitkeep
+
+projects/*
+!projects/.gitkeep
+
+.DS_Store
